@@ -7,7 +7,7 @@
 /*Navbar*/
 .navbar-container{
     width: 100%;
-    height: auto;
+    height: 280px;
     background-color: #c2c2b9;
     padding: 5px;
     position: fixed;
@@ -49,13 +49,44 @@
 }
 /*fim navbar*/
 
-/*Seção produtos*/
-.main-product{
+/*Seção Home*/
+.main-home{
     padding: 290px 10px 20px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
+}
+
+.img-home{
+    width: 260px;
+}
+
+.content-home{
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.content-home h1{
+    color:#014984;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.content-home p{
+    color: #014984;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*fim seção Home*/
+
+/*Seção produtos*/
+.main-product{
+    padding: 0 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
 }
 
 .img-product{
@@ -70,14 +101,16 @@
 .content-product h1{
     color:#014984;
     font-weight: 700;
+   
 }
 
 .content-product p{
     color: #014984;
     font-weight: 600;
+    
 }
 
- .btn{
+.btn{
     border: 1px solid #014984;
     padding: 10px;
     background-color:#fde430;
@@ -106,6 +139,8 @@ label{
 #modalProduct textarea{
     border: 1px solid #014984;
 }
+/*fim seção produtos*/
+
 
 /*Media queries*/
 /*Small devices (landscape phones, 576px and up)*/
@@ -142,6 +177,27 @@ label{
     } 
     /*fim navbar*/
 
+    /*Seção Home*/
+    .main-home{
+        padding-top: 110px;
+        margin: 0 20px 0 20px;
+        flex-direction: row;
+    }
+    .content-img{
+        margin: auto;
+         order: 2;
+    }
+
+    .img-home{
+        width: auto;
+    }
+
+    .content-home{
+        margin: auto;
+        order: 1;
+    }
+    /*fim seção home*/
+
     /*Seção produtos*/
    .main-product{
         padding: 100px 10px 20px 10px;
@@ -153,15 +209,19 @@ label{
         border-radius: 50%;
     }
 
-    
-    
-    
-
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+    /*Seção Home*/
+    .content-home h1{
+        font-size: 2.6rem;
+    }
 
+    .content-home p{
+        font-size: 1.8rem;
+    }
+    /*fim Seção Home*/
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
