@@ -141,6 +141,37 @@ label{
 }
 /*fim seção produtos*/
 
+/*Seção clientes*/
+.main-customers{
+    text-align: center;
+    width: 100%;
+   
+}
+
+.main-customers h1{
+    color: #014984;
+    font-weight: 700;
+}
+
+.content-customers{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-customers h3, p{
+    color: #014984;
+}
+
+.content-customers p{
+    margin-bottom: 0;
+}
+
+.content-customers h3{
+    font-weight: 700;
+}
+/*fim seção clientes*/
 
 /*Media queries*/
 /*Small devices (landscape phones, 576px and up)*/
@@ -208,6 +239,8 @@ label{
         width: 350px;
         border-radius: 50%;
     }
+
+    /*fim seção produtos*/
 
 }
 
